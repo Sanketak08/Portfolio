@@ -1,0 +1,95 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+/* UTILITIES */
+.mt-6 {
+    margin-top: 8vw;
+}
+
+/* VARIABLES */
+:root {
+    --bg-main: #ebe9f7;
+    --font-size: 22px;
+    --font-color: #001c55;
+}
+
+/* BODY */
+* {
+    background-color: var(--bg-main);
+    font-family: 'Nunito Sans';
+    color: var(--font-color) !important;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    cursor: pointer;
+}
+
+.name-logo {
+    font-family: 'OneSignature';
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.name-braces {
+    font-size: 30px;
+    font-weight: 100;
+}
+.nav-item {
+    font-size: var(--font-size);
+}
+.nav-link {
+    cursor: pointer;
+}
+
+/* HOME */
+.container1 {
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 5;
+    transition: all 600ms ease;
+}
+
+.btn span {
+    background: var(--font-color);
+    background: var(--font-color);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c55', endColorstr='#001c55',GradientType=1 );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+.text {
+    background-color: var(--font-color) !important;
+}

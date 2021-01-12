@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className='navbar navbar-expand-lg navbar-light'>
             <Fragment>
-                <Link to='/home' className='navbar-brand ml-4'>
+                <Link to='/' className='navbar-brand ml-4'>
                     <span className='name-braces'>&lt; </span>
                     <span className='name-logo'>Sanket Kulkarni</span>
                     <span className='name-braces'> /&gt;</span>
@@ -29,27 +29,22 @@ const Navbar = () => {
             >
                 <ul className='navbar-nav ml-auto'>
                     <li className='nav-item mr-4'>
-                        <Link to='/home' className='nav-link'>
+                        <Link to='/' className='nav-link nav-text'>
                             Home
                         </Link>
                     </li>
                     <li className='nav-item mr-4'>
-                        <a href='#about' className='nav-link'>
-                            About Me
-                        </a>
-                    </li>
-                    <li className='nav-item mr-4'>
-                        <Link to='/education' className='nav-link'>
+                        <Link to='/education' className='nav-link nav-text'>
                             Education
                         </Link>
                     </li>
                     <li className='nav-item mr-4'>
-                        <Link to='/projects' className='nav-link'>
+                        <Link to='/projects' className='nav-link nav-text'>
                             Projects
                         </Link>
                     </li>
                     <li className='nav-item mr-4'>
-                        <Link to='/contact' className='nav-link'>
+                        <Link to='/contact' className='nav-link nav-text'>
                             Contact Me
                         </Link>
                     </li>

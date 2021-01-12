@@ -6,18 +6,30 @@
     margin-top: 8vw;
 }
 
+.ml-6 {
+    margin-left: 11.5vw;
+}
+
+.social {
+    font-size: 50px;
+    margin-right: 1.5vw;
+}
+
 /* VARIABLES */
 :root {
-    --bg-main: #ebe9f7;
+    --bg-main: #dde8f1;
     --font-size: 22px;
     --font-color: #001c55;
 }
 
 /* BODY */
 * {
-    background-color: var(--bg-main);
     font-family: 'Nunito Sans';
     color: var(--font-color) !important;
+}
+
+body {
+    background-color: var(--bg-main);
 }
 
 /* NAVBAR */
@@ -42,54 +54,64 @@
     cursor: pointer;
 }
 
-/* HOME */
-.container1 {
-    height: 0%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.btn {
+.nav-text {
+    display: inline;
     position: relative;
-    display: inline-block;
-    width: 277px;
-    height: 50px;
-    line-height: 60px;
-    text-align: center;
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
+    overflow: hidden;
+    padding-bottom: 0px !important;
 }
-
-.btn svg {
+.nav-text:after {
+    content: '';
     position: absolute;
-    top: 0;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -3px;
+    background: var(--font-color);
+    height: 3px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.nav-text:hover:after,
+.nav-text:focus:after,
+.nav-text:active:after {
     left: 0;
+    right: auto;
+    width: 100%;
 }
 
-.btn svg rect {
-    stroke-width: 4;
-    stroke-dasharray: 353, 0;
-    stroke-dashoffset: 5;
-    transition: all 600ms ease;
+/* HOME */
+.greeting-svg {
+    overflow-x: hidden;
 }
 
-.btn span {
-    background: var(--font-color);
-    background: var(--font-color);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c55', endColorstr='#001c55',GradientType=1 );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.greeting-text__hi {
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
 }
 
-.btn:hover svg rect {
-    stroke-width: 4;
-    stroke-dasharray: 196, 543;
-    stroke-dashoffset: 437;
+.greeting-text__name {
+    font-size: 60px;
+    font-weight: 900;
 }
 
-.text {
-    background-color: var(--font-color) !important;
+.greeting-text__bio {
+    font-size: 30px;
+    font-weight: 800;
+    color: #74809e !important;
+}
+
+.btn-primary {
+    background-color: var(--bg-main);
+    border: 2px solid #001c55;
+    border-radius: 10px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--font-color);
+    color: #ffffff !important;
+    border: 2px solid #001c55;
 }

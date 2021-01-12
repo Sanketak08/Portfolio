@@ -1,53 +1,52 @@
 import React, { Fragment } from 'react';
+import SVG from '../assets/img/Home-bg.svg';
 
 const Home = () => {
     return (
-        <Fragment>
+        <Fragment className='home'>
             <div className='container'>
-                {/* Greetings Text */}
-                <div className='col-6'>
-                    <div className='greeting-text mt-6'>
-                        <div className='h3'>Hi There</div>
-                        <div className='h1'>I'm Sanket Kulkarni</div>
-                    </div>
-                    <div className='social'>
-                        <i className='fa fa-linkedin'></i>
-                        <i className='fa fa-github'></i>
-                        <i className='fa fa-envelope'></i>
-                    </div>
-                    <div className='resume'>
-                        <div class='container1'>
-                            <a href='www' class='btn mt-6'>
-                                <svg width='277' height='62'>
-                                    <defs>
-                                        <linearGradient id='grad1'>
-                                            <stop
-                                                offset='0%'
-                                                stop-color='#001c55'
-                                            />
-                                            <stop
-                                                offset='0%'
-                                                stop-color='#001c55'
-                                            />
-                                        </linearGradient>
-                                    </defs>
-                                    <rect
-                                        x='5'
-                                        y='5'
-                                        rx='12'
-                                        fill='none'
-                                        stroke='url(#grad1)'
-                                        width='266'
-                                        height='50'
-                                    ></rect>
-                                </svg>
-                                gdhguidh
-                            </a>
+                <div className='row greeting '>
+                    {/* Greetings Text */}
+                    <div className='greeting-para col-12 col-md-6'>
+                        <div className='greeting-text mt-6 mb-5'>
+                            <div className='h3 greeting-text__hi'>
+                                Hi There!
+                            </div>
+                            <div className='h1 greeting-text__name'>
+                                I'm Sanket Kulkarni
+                            </div>
+                            <div className='greeting-text__bio text-center'>
+                                Full Stack Developer | React Native Enthusiast
+                            </div>
+                        </div>
+                        {/* Social Media */}
+                        <div className='text-center'>
+                            <i className='social fa fa-linkedin-square'></i>
+                            <i className='social fa fa-github-square'></i>
+                            <i className='social fa fa-envelope-square'></i>
+                        </div>
+                        {/* Resume Button */}
+                        <div className='resume d-flex justify-content-center mt-5'>
+                            <button type='button' class='btn btn-primary'>
+                                <i
+                                    className='fa fa-file-text'
+                                    aria-hidden='true'
+                                ></i>{' '}
+                                See My Resume
+                            </button>
                         </div>
                     </div>
+                    {/* Greetings SVG */}
+                    <div className='greeting-svg col-12 col-md-6'>
+                        <img
+                            className='mr-6'
+                            width='130%'
+                            height='100%'
+                            src={SVG}
+                            alt='Svg'
+                        />
+                    </div>
                 </div>
-                {/* Greetings SVG */}
-                <div className='col-6'></div>
             </div>
         </Fragment>
     );

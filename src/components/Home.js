@@ -6,63 +6,73 @@ import HomeBio from '../assets/img/Home-bio.png';
 
 const Home = () => {
     return (
-        <Fragment className='home'>
-            <div className='container'>
-                {/* Main Home */}
-                <div className='row greeting'>
-                    {/* Greetings Text */}
-                    <div className='greeting-para col-12 col-md-6'>
-                        <div className='greeting-text mt-6 mb-5'>
-                            <div className='h3 greeting-text__hi'>
-                                Hi There!
+        <Fragment>
+            <div className='home'>
+                <div className='container'>
+                    {/* Main Home */}
+                    <div className='row greeting'>
+                        {/* Greetings Text */}
+                        <div className='greeting-para col-12 col-md-6'>
+                            <div className='greeting-text mt-6 mb-5'>
+                                <div className='h3 greeting-text__hi'>
+                                    Hi There!
+                                </div>
+                                <div className='h1 greeting-text__name'>
+                                    I'm Sanket Kulkarni
+                                </div>
+                                <div className='greeting-text__bio text-center'>
+                                    Full Stack Developer | React Native
+                                    Enthusiast
+                                </div>
                             </div>
-                            <div className='h1 greeting-text__name'>
-                                I'm Sanket Kulkarni
+                            {/* Social Media */}
+                            <div className='d-flex justify-content-center ml-4'>
+                                <a
+                                    href='http://www.linkedin.com/in/sanket-a-kulkarni'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <i className='social fa fa-linkedin-square'></i>
+                                </a>
+                                <a
+                                    href='http://www.github.com/Sanketak08'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <i className='social fa fa-github-square'></i>
+                                </a>
+                                <a href='mailto:sakulkarni0801@gmail.com'>
+                                    <i className='social fa fa-envelope-square'></i>
+                                </a>
                             </div>
-                            <div className='greeting-text__bio text-center'>
-                                Full Stack Developer | React Native Enthusiast
+                            {/* Resume Button */}
+                            <div className='d-flex justify-content-center mt-5'>
+                                <a
+                                    href='https://drive.google.com/file/d/1KBl_LEbC1X5yD64fMkPi_sgQas3CJ_ld/view?usp=sharing'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <button type='button' class='custom-btn'>
+                                        <i className='fa fa-file' /> See My
+                                        Resume
+                                    </button>
+                                </a>
                             </div>
                         </div>
-                        {/* Social Media */}
-                        <div className='d-flex justify-content-center ml-4'>
-                            <a
-                                href='http://www.linkedin.com/in/sanket-a-kulkarni'
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <i className='social fa fa-linkedin-square'></i>
-                            </a>
-                            <a
-                                href='http://www.github.com/Sanketak08'
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <i className='social fa fa-github-square'></i>
-                            </a>
-                            <a href='mailto:sakulkarni0801@gmail.com'>
-                                <i className='social fa fa-envelope-square'></i>
-                            </a>
+                        {/* Greetings SVG */}
+                        <div className='greeting-svg col-12 col-md-6'>
+                            <img
+                                className='mr-6'
+                                width='130%'
+                                height='100%'
+                                src={HomeMain}
+                                alt='Svg'
+                            />
                         </div>
-                        {/* Resume Button */}
-                        <div className='d-flex justify-content-center mt-5'>
-                            <a href='https://drive.google.com/file/d/1KBl_LEbC1X5yD64fMkPi_sgQas3CJ_ld/view?usp=sharing'>
-                                <button type='button' class='custom-btn'>
-                                    <i className='fa fa-file' /> See My Resume
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    {/* Greetings SVG */}
-                    <div className='greeting-svg col-12 col-md-6'>
-                        <img
-                            className='mr-6'
-                            width='130%'
-                            height='100%'
-                            src={HomeMain}
-                            alt='Svg'
-                        />
                     </div>
                 </div>
+            </div>
+            <div className='container'>
                 {/* Home Bio */}
                 <div className='row mt-5'>
                     <div className='col-12 col-md-6'>
@@ -75,17 +85,11 @@ const Home = () => {
                                 Applications which could be helpful in solving
                                 real-life problems and beneficial for the
                                 mankind. My other interests include Gaming,
-                                listening music and watching Web Series.
+                                listening Music and watching Web Series.
                             </p>
-                            <div class='bttn-cont'>
-                                <Link class='bttn' to='/about'>
-                                    Read More
-                                    <span class='line-1'></span>
-                                    <span class='line-2'></span>
-                                    <span class='line-3'></span>
-                                    <span class='line-4'></span>
-                                </Link>
-                            </div>
+                            <Link to='/about'>
+                                <div class='lead btn1 from-left'>Read More</div>
+                            </Link>
                         </div>
                     </div>
                     <div className='col-12 col-md-6'>

@@ -1,10 +1,22 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import lottie from 'lottie-web';
 
-import HomeMain from '../assets/img/Home-bg.svg';
 import HomeBio from '../assets/img/Home-bio.png';
 
 const Home = () => {
+    const homeGIF = useRef(null);
+
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: homeGIF.current,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            animationData: require('../assets/img/HomePage.json'),
+        });
+    }, []);
+
     return (
         <Fragment>
             <div className='home'>
@@ -60,14 +72,8 @@ const Home = () => {
                             </div>
                         </div>
                         {/* Greetings SVG */}
-                        <div className='greeting-svg col-12 col-md-6'>
-                            <img
-                                className='mr-6'
-                                width='130%'
-                                height='100%'
-                                src={HomeMain}
-                                alt='Svg'
-                            />
+                        <div className='col-12 col-md-6'>
+                            <div className='homeGIF' ref={homeGIF}></div>
                         </div>
                     </div>
                 </div>

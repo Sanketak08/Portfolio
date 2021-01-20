@@ -22,24 +22,26 @@
     --font-color: #001c55;
     --white: #ffffff;
     --muted: #74809e;
-    --linkedin: #0e76a8;
+    --linkedin: #0072b1;
     --github: #000000;
     --gmail: #bb001b;
+    --mongo-color: #589636;
 }
 
 /* BODY */
 * {
     font-family: 'Nunito Sans';
-    color: var(--font-color) !important;
 }
 
 body {
     background-color: var(--bg-main);
+    color: var(--font-color) !important;
 }
 
 /* NAVBAR */
 .navbar-brand {
     cursor: pointer;
+    color: var(--font-color) !important;
 }
 
 .name-logo {
@@ -57,6 +59,7 @@ body {
 }
 .nav-link {
     cursor: pointer;
+    color: var(--font-color) !important;
 }
 
 .nav-text {
@@ -87,8 +90,8 @@ body {
 }
 
 /* HOME */
-.greeting-svg {
-    overflow-x: hidden;
+.home {
+    height: 100vh;
 }
 
 .greeting-text__hi {
@@ -274,4 +277,108 @@ body {
 .from-left:hover:before,
 .from-left:hover:after {
     width: 100%;
+}
+
+/* ABOUT */
+.heading {
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.domain {
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+}
+
+/* .domain::before {
+    display: inline-block;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    content: '';
+    background-color: var(--font-color);
+    width: 5vw;
+    height: 8px;
+    margin: 0 20px;
+    transform: translateY(-10px);
+    -webkit-animation: animate infinite;
+    animation: animate 2s infinite;
+}
+
+.domain::after {
+    display: inline-block;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    content: '';
+    background-color: var(--font-color);
+    width: 5vw;
+    height: 8px;
+    margin: 0 20px;
+    transform: translateY(-10px);
+    -webkit-animation: animate infinite;
+    animation: animate 2s infinite;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        right: 100%;
+    }
+    50% {
+        right: 0;
+        left: 0;
+    }
+    100% {
+        right: 0;
+        left: 100%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        right: 100%;
+    }
+    50% {
+        right: 0;
+        left: 0;
+    }
+    100% {
+        right: 0;
+        left: 100%;
+    }
+} */
+
+.category {
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.iconify {
+    width: 60px;
+    height: auto;
+    margin-right: 1vw;
+    transition: all 0.1s;
+}
+
+.iconify:hover {
+    outline: solid var(--font-color);
+    padding: 2px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-points {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.mongo {
+    color: var(--mongo-color) !important;
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import lottie from 'lottie-web';
 
 import HomeBio from '../assets/img/Home-bio.png';
+import ScrollTop from './utils/ScrollTop';
 
 const Home = () => {
     const homeGIF = useRef(null);
@@ -19,6 +20,7 @@ const Home = () => {
 
     return (
         <Fragment>
+            <ScrollTop />
             <div className='home'>
                 <div className='container'>
                     {/* Main Home */}
@@ -109,6 +111,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* Footer */}
             <div className='footer mt-5 pt-5 pb-3'>
                 <div className='lead footer-text text-center'>
                     Made with ❤️ by Sanket Kulkarni

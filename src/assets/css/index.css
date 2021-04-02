@@ -15,6 +15,22 @@
     margin-right: 1.5vw;
 }
 
+m-0 {
+    margin-bottom: 0 !important;
+}
+
+/* Scroll-Top */
+.scrollTop {
+    position: fixed;
+    width: 5%;
+    bottom: 20px;
+    right: 10px;
+    align-items: flex-end;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
 /* VARIABLES */
 :root {
     --bg-main: #dde8f1;
@@ -81,9 +97,9 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
 }
-.nav-text:hover:after,
-.nav-text:focus:after,
-.nav-text:active:after {
+.nav-text:hover::after,
+.nav-text:focus,
+.nav-text:active {
     left: 0;
     right: auto;
     width: 100%;
@@ -279,7 +295,7 @@ body {
     width: 100%;
 }
 
-/* ABOUT */
+/* ABOUT PAGE*/
 .heading {
     letter-spacing: 2px;
     font-weight: 900;
@@ -292,64 +308,6 @@ body {
     font-size: 40px;
     position: relative;
 }
-
-/* .domain::before {
-    display: inline-block;
-    position: absolute;
-    bottom: 25%;
-    left: 0;
-    content: '';
-    background-color: var(--font-color);
-    width: 5vw;
-    height: 8px;
-    margin: 0 20px;
-    transform: translateY(-10px);
-    -webkit-animation: animate infinite;
-    animation: animate 2s infinite;
-}
-
-.domain::after {
-    display: inline-block;
-    position: absolute;
-    bottom: 25%;
-    right: 0;
-    content: '';
-    background-color: var(--font-color);
-    width: 5vw;
-    height: 8px;
-    margin: 0 20px;
-    transform: translateY(-10px);
-    -webkit-animation: animate infinite;
-    animation: animate 2s infinite;
-}
-
-@-webkit-keyframes animate {
-    0% {
-        right: 100%;
-    }
-    50% {
-        right: 0;
-        left: 0;
-    }
-    100% {
-        right: 0;
-        left: 100%;
-    }
-}
-
-@keyframes animate {
-    0% {
-        right: 100%;
-    }
-    50% {
-        right: 0;
-        left: 0;
-    }
-    100% {
-        right: 0;
-        left: 100%;
-    }
-} */
 
 .category {
     letter-spacing: 1px;
@@ -381,4 +339,90 @@ ul {
 
 .mongo {
     color: var(--mongo-color) !important;
+}
+
+/* EDUCATION PAGE */
+.header {
+    font-weight: 700;
+}
+
+.qualification-content {
+    height: 12vw;
+}
+
+.qualification {
+    border-radius: 10px;
+    position: relative;
+    width: 30%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--font-color);
+    color: var(--white);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.qualification:hover {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(0.85);
+}
+
+.school-content {
+    border: 2px solid var(--font-color);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.1s;
+}
+
+.school-content:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: var(--white);
+}
+
+.school {
+    font-weight: 600;
+}
+
+.year {
+    font-size: 18px;
+}
+
+.marks {
+    font-weight: 600;
+}
+
+/* Project */
+
+.pr-heading {
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.pr-image {
+    height: 17vw;
+    width: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.pr-btn {
+    color: var(--font-color);
+    background-color: var(--bg-main);
+    padding: 5px 25px;
+    font-size: var(--font-size);
+    float: right;
+    border: 1px solid var(--font-color);
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.pr-btn:hover {
+    color: var(--white);
+    background-color: var(--font-color);
 }

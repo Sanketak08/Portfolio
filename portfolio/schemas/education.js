@@ -15,6 +15,11 @@ export default {
             type: 'string',
         },
         {
+            name: 'location',
+            title: 'Location',
+            type: 'string',
+        },
+        {
             name: 'from',
             title: 'From',
             type: 'date',
@@ -29,6 +34,11 @@ export default {
             options: {
                 dateFormat: 'YYYY',
             },
+        },
+        {
+            name: 'percentageLabel',
+            title: 'Standard',
+            type: 'string',
         },
         {
             name: 'percentage',

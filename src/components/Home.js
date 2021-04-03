@@ -35,7 +35,7 @@ const Home = () => {
                                     I'm Sanket Kulkarni
                                 </div>
                                 <div className='greeting-text__bio text-center'>
-                                    Full Stack Developer | React Native
+                                    MERN Stack Developer | React Native
                                     Enthusiast
                                 </div>
                             </div>

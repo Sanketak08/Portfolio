@@ -120,6 +120,14 @@ const AboutMe = () => {
                                     data-icon='cib:mongodb'
                                 ></div>
                                 <div
+                                    class='iconify'
+                                    data-icon='logos:firebase'
+                                ></div>
+                                <div
+                                    class='iconify'
+                                    data-icon='logos:postgresql'
+                                ></div>
+                                <div
                                     className='iconify'
                                     data-icon='vscode-icons:file-type-npm'
                                 ></div>

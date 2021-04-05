@@ -62,7 +62,7 @@ const Home = () => {
                             {/* Resume Button */}
                             <div className='d-flex justify-content-center mt-5'>
                                 <a
-                                    href='https://drive.google.com/file/d/1KBl_LEbC1X5yD64fMkPi_sgQas3CJ_ld/view?usp=sharing'
+                                    href='https://drive.google.com/file/d/1g-YNHMKSPFB1t4RjLWeHnHMuqHqAXUhs/view?usp=sharing'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -86,7 +86,7 @@ const Home = () => {
                     <div className='col-12 col-md-6'>
                         <div className='bio card  mb-5 p-3'>
                             <p className='lead card-body'>
-                                I'm Full Stack Developer currently pursuing
+                                I'm MERN Stack Developer currently pursuing
                                 Bachelor's Degree in Computer Engineering from
                                 Pune Institute of Computer Technology. I'm
                                 interested in developing Web as well as Android

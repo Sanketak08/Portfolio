@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -29,29 +29,50 @@ const Navbar = () => {
             >
                 <ul className='navbar-nav ml-auto'>
                     <li className='nav-item mr-4'>
-                        <Link to='/' className='nav-link nav-text'>
+                        <NavLink
+                            exact
+                            to='/'
+                            activeClassName='active'
+                            className='nav-link nav-text'
+                        >
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className='nav-item mr-4'>
-                        <Link to='/about' className='nav-link nav-text'>
+                        <NavLink
+                            to='/about'
+                            activeClassName='active'
+                            className='nav-link nav-text'
+                        >
                             About Me
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className='nav-item mr-4'>
-                        <Link to='/education' className='nav-link nav-text'>
+                        <NavLink
+                            to='/education'
+                            activeClassName='active'
+                            className='nav-link nav-text'
+                        >
                             Education
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className='nav-item mr-4'>
-                        <Link to='/projects' className='nav-link nav-text'>
+                        <NavLink
+                            to='/projects'
+                            activeClassName='active'
+                            className='nav-link nav-text'
+                        >
                             Projects
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className='nav-item mr-4'>
-                        <Link to='/contact' className='nav-link nav-text'>
+                        <NavLink
+                            to='/contact'
+                            activeClassName='active'
+                            className='nav-link nav-text'
+                        >
                             Contact Me
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

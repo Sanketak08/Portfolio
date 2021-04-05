@@ -214,6 +214,10 @@ const AboutMe = () => {
                                     className='iconify'
                                     data-icon='logos:python'
                                 ></div>
+                                <div
+                                    class='iconify'
+                                    data-icon='logos:java'
+                                ></div>
                             </div>
                             <div className='key-points mt-4'>
                                 <ul>

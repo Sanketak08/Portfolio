@@ -4,6 +4,7 @@ import DevConnector from '../assets/img/DevConnector.png';
 import ReactNativeLibrary from '../assets/img/ReactNativeLibrary.png';
 import Ideathon from '../assets/img/Ideathon.png';
 import Istriwala from '../assets/img/Istriwala.jpg';
+import ScrollTop from './utils/ScrollTop';
 
 const Projects = () => {
     const projectGIF = useRef(null);
@@ -20,14 +21,20 @@ const Projects = () => {
 
     return (
         <Fragment>
+            <ScrollTop />
             <div className='container'>
                 <div className='row pr-header'>
                     <div className='col-12 col-md-6'>
                         <div className='projectGIF' ref={projectGIF}></div>
                     </div>
-                    <div className='d-flex align justify-content-center col-12 col-md-6'>
+                    <div className='align col-12 col-md-6'>
                         <div className='pr-heading h1 text-center'>
                             Projects
+                        </div>
+                        <div className='lead mt-4 text-center'>
+                            My projects make best use of new technologies and
+                            are based on real-world scenarios. I've made use of
+                            different technologies for different projects.
                         </div>
                     </div>
                 </div>
@@ -67,7 +74,11 @@ const Projects = () => {
                             ></div>
                         </div>
                         <div className='mt-8'>
-                            <a href='https://devconnector08.herokuapp.com/'>
+                            <a
+                                href='https://devconnector08.herokuapp.com/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <button type='button' className='pr-btn'>
                                     Link
                                 </button>
@@ -105,7 +116,11 @@ const Projects = () => {
                             ></div>
                         </div>
                         <div className='mt-8'>
-                            <a href='https://github.com/5iveD3velopers/EstreewalaApp'>
+                            <a
+                                href='https://github.com/5iveD3velopers/EstreewalaApp'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <button type='button' className='pr-btn'>
                                     Link
                                 </button>
@@ -152,7 +167,11 @@ const Projects = () => {
                             ></div>
                         </div>
                         <div className='mt-8'>
-                            <a href='https://github.com/react-dev-community/utility-components'>
+                            <a
+                                href='https://github.com/react-dev-community/utility-components'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <button type='button' className='pr-btn'>
                                     Link
                                 </button>
@@ -187,7 +206,11 @@ const Projects = () => {
                             ></div>
                         </div>
                         <div className='mt-8'>
-                            <a href='https://hackathon-20-pisb.netlify.app/'>
+                            <a
+                                href='https://hackathon-20-pisb.netlify.app/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <button type='button' className='pr-btn'>
                                     Link
                                 </button>

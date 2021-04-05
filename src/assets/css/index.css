@@ -60,6 +60,10 @@ body {
     color: var(--font-color) !important;
 }
 
+.active {
+    font-weight: bold;
+}
+
 .name-logo {
     font-family: 'OneSignature';
     font-size: 50px;
@@ -342,57 +346,13 @@ ul {
 }
 
 /* EDUCATION PAGE */
-.header {
-    font-weight: 700;
+.ed-align {
+    position: absolute;
+    top: 25%;
+    left: 50%;
 }
 
-.qualification-content {
-    height: 12vw;
-}
-
-.qualification {
-    border-radius: 10px;
-    position: relative;
-    width: 30%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    background-color: var(--font-color);
-    color: var(--white);
-    text-align: center;
-    transition: all 0.2s;
-}
-
-.qualification:hover {
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    transform: scale(0.85);
-}
-
-.school-content {
-    border: 2px solid var(--font-color);
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.1s;
-}
-
-.school-content:hover {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    background-color: var(--white);
-}
-
-.school {
-    font-weight: 600;
-}
-
-.year {
-    font-size: 18px;
-}
-
-.marks {
-    font-weight: 600;
-}
-
-/* Project */
-
+/* PROJECT PAGE */
 .pr-heading {
     letter-spacing: 1px;
     font-weight: 900;
@@ -421,7 +381,7 @@ ul {
 
 .align {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
 }
 

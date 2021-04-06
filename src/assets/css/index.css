@@ -1,6 +1,6 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100;1,300&display=swap');
 /* UTILITIES */
 .mt-6 {
     margin-top: 8vw;
@@ -42,6 +42,7 @@ m-0 {
     --github: #000000;
     --gmail: #bb001b;
     --mongo-color: #589636;
+    --bg-card: #94b4d1;
 }
 
 /* BODY */
@@ -352,6 +353,51 @@ ul {
     left: 50%;
 }
 
+.hackerrank {
+    color: #00b15d;
+    height: 90px;
+    width: auto;
+}
+
+.edu-card {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-card);
+}
+
+.college {
+    font-weight: 600 !important;
+}
+
+.num-font-year {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: var(--font-size);
+}
+
+.num-font-marks {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: var(--font-size);
+}
+
+.marks {
+    font-size: var(--font-size);
+}
+
+.qualification {
+    position: absolute;
+    right: 7%;
+    top: 33%;
+    font-size: var(--font-size);
+    font-weight: bold;
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: var(--font-color);
+    border-radius: 10px;
+}
+
 /* PROJECT PAGE */
 .pr-heading {
     letter-spacing: 1px;
@@ -375,7 +421,7 @@ ul {
 }
 
 .pr-header {
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 

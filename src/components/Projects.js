@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import DevConnector from '../assets/img/DevConnector.png';
 import ReactNativeLibrary from '../assets/img/ReactNativeLibrary.png';
 import Ideathon from '../assets/img/Ideathon.png';
@@ -17,13 +19,18 @@ const Projects = () => {
             autoplay: true,
             animationData: require('../assets/img/Project.json'),
         });
+        AOS.init();
     }, []);
 
     return (
         <Fragment>
             <ScrollTop />
             <div className='container'>
-                <div className='row pr-header'>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    className='row pr-header'
+                >
                     <div className='col-12 col-md-6'>
                         <div className='projectGIF' ref={projectGIF}></div>
                     </div>
@@ -42,12 +49,18 @@ const Projects = () => {
                 <div className='row'>
                     <div className='col-12 col-md-6'>
                         <img
+                            data-aos='flip-left'
+                            data-aos-duration='1000'
                             src={DevConnector}
                             alt='DevConnector'
                             className='pr-image'
                         />
                     </div>
-                    <div className='col-12 col-md-6'>
+                    <div
+                        data-aos='fade-left'
+                        data-aos-duration='1000'
+                        className='col-12 col-md-6'
+                    >
                         <div>
                             <p className='h1 title'>DevConnector</p>
                         </div>
@@ -88,7 +101,11 @@ const Projects = () => {
                 </div>
                 {/* Istriwala */}
                 <div className='row mt-6'>
-                    <div className='col-12 col-md-6'>
+                    <div
+                        data-aos='fade-right'
+                        data-aos-duration='1000'
+                        className='col-12 col-md-6'
+                    >
                         <div>
                             <p className='h1 title'>Istriwala</p>
                         </div>
@@ -129,6 +146,8 @@ const Projects = () => {
                     </div>
                     <div className='col-12 col-md-6 d-flex align-items-center justify-content-center'>
                         <img
+                            data-aos='flip-right'
+                            data-aos-duration='1000'
                             src={Istriwala}
                             alt='Istriwala'
                             className='pr-image-istri'
@@ -139,12 +158,18 @@ const Projects = () => {
                 <div className='row mt-6'>
                     <div className='col-12 col-md-6'>
                         <img
+                            data-aos='flip-left'
+                            data-aos-duration='1000'
                             src={ReactNativeLibrary}
                             alt='React Native Library'
                             className='pr-image'
                         />
                     </div>
-                    <div className='col-12 col-md-6'>
+                    <div
+                        data-aos='fade-left'
+                        data-aos-duration='1000'
+                        className='col-12 col-md-6'
+                    >
                         <div>
                             <p className='h1 title'>React Native Library</p>
                         </div>
@@ -181,7 +206,11 @@ const Projects = () => {
                 </div>
                 {/* Ideathon */}
                 <div className='row mt-6'>
-                    <div className='col-12 col-md-6'>
+                    <div
+                        data-aos='fade-right'
+                        data-aos-duration='1000'
+                        className='col-12 col-md-6'
+                    >
                         <div>
                             <p className='h1 title'>Ideathon</p>
                         </div>
@@ -219,6 +248,8 @@ const Projects = () => {
                     </div>
                     <div className='col-12 col-md-6'>
                         <img
+                            data-aos='flip-right'
+                            data-aos-duration='1000'
                             src={Ideathon}
                             alt='Ideathon'
                             className='pr-image'
@@ -227,7 +258,11 @@ const Projects = () => {
                 </div>
             </div>
             {/* More Projects */}
-            <div className='d-flex justify-content-center mt-6'>
+            <div
+                data-aos='fade-up'
+                data-aos-duration='1000'
+                className='d-flex justify-content-center mt-6'
+            >
                 <a
                     href='https://github.com/Sanketak08'
                     target='_blank'

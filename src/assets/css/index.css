@@ -48,6 +48,7 @@ m-0 {
 /* BODY */
 * {
     font-family: 'Nunito Sans';
+    /* border: 1px solid red; */
 }
 
 body {
@@ -347,6 +348,11 @@ ul {
 }
 
 /* EDUCATION PAGE */
+.ed-header {
+    height: 80vh;
+    position: relative;
+}
+
 .ed-align {
     position: absolute;
     top: 25%;
@@ -421,7 +427,7 @@ ul {
 }
 
 .pr-header {
-    height: 80vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -449,4 +455,71 @@ a:hover {
 .pr-btn:hover {
     color: var(--white);
     background-color: var(--font-color);
+}
+
+/* CONTACT ME */
+/* .ad-heading {
+    font-weight: bold;
+} */
+
+.email-icon {
+    padding: 18px;
+    background-color: var(--font-color);
+    color: var(--white);
+    font-size: var(--font-size);
+    border-radius: 50px;
+}
+
+.git-icon {
+    padding: 18px;
+    background-color: var(--font-color);
+    color: var(--white);
+    font-size: var(--font-size);
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.git-icon:hover {
+    background-color: var(--github);
+}
+
+.linkedin-icon {
+    padding: 18px;
+    background-color: var(--font-color);
+    color: var(--white);
+    font-size: var(--font-size);
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.linkedin-icon:hover {
+    background-color: var(--linkedin);
+}
+
+.instagram-icon {
+    padding: 18px;
+    background-color: var(--font-color);
+    color: var(--white);
+    font-size: var(--font-size);
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.instagram-icon:hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+}
+
+.map-icon {
+    padding: 18px 22px;
+    background-color: var(--font-color);
+    color: var(--white);
+    font-size: var(--font-size);
+    border-radius: 100% !important;
 }

@@ -1,6 +1,8 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import ScrollTop from './utils/ScrollTop';
 import lottie from 'lottie-web';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Education = () => {
     const projectGIF = useRef(null);
@@ -13,12 +15,17 @@ const Education = () => {
             autoplay: true,
             animationData: require('../assets/img/Education.json'),
         });
+        AOS.init();
     }, []);
     return (
         <Fragment>
             <ScrollTop />
             <div className='container'>
-                <div className='pr-header row'>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    className='ed-header row'
+                >
                     <div className='col-12 col-md-6'>
                         <div className='projectGIF' ref={projectGIF}></div>
                     </div>
@@ -30,8 +37,18 @@ const Education = () => {
                 </div>
                 <div className='pr-body'>
                     {/* Certifications */}
-                    <div className='h1 text-center'>Certifications</div>
-                    <div>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        className='h1 text-center'
+                    >
+                        Certifications
+                    </div>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        data-aos-delay='300'
+                    >
                         <a
                             href='https://www.hackerrank.com/sakulkarni0801'
                             target='_blank'
@@ -45,9 +62,19 @@ const Education = () => {
                         </a>
                     </div>
                     {/* Qualifications */}
-                    <div className='h1 text-center mt-6'>Qualifications</div>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        className='h1 text-center mt-5'
+                    >
+                        Qualifications
+                    </div>
                     {/* PICT */}
-                    <div className='card edu-card mt-5'>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        className='card edu-card mt-5'
+                    >
                         <div className='card-body'>
                             <div className='edu-info'>
                                 <h3 className='college'>
@@ -64,7 +91,11 @@ const Education = () => {
                         </div>
                     </div>
                     {/* HSC */}
-                    <div className='card edu-card mt-5'>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        className='card edu-card mt-5'
+                    >
                         <div className='card-body'>
                             <div className='edu-info'>
                                 <h3 className='college'>
@@ -87,7 +118,11 @@ const Education = () => {
                         </div>
                     </div>
                     {/* SSC */}
-                    <div className='card edu-card mt-5'>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        className='card edu-card mt-5'
+                    >
                         <div className='card-body'>
                             <div className='edu-info'>
                                 <h3 className='college'>

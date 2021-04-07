@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import lottie from 'lottie-web';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import HomeBio from '../assets/img/Home-bio.png';
 import ScrollTop from './utils/ScrollTop';
 
@@ -16,6 +17,7 @@ const Home = () => {
             autoplay: true,
             animationData: require('../assets/img/HomePage.json'),
         });
+        AOS.init();
     }, []);
 
     return (
@@ -24,7 +26,11 @@ const Home = () => {
             <div className='home'>
                 <div className='container'>
                     {/* Main Home */}
-                    <div className='row greeting'>
+                    <div
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                        className='row greeting'
+                    >
                         {/* Greetings Text */}
                         <div className='greeting-para col-12 col-md-6'>
                             <div className='greeting-text mt-6 mb-5'>
@@ -84,7 +90,11 @@ const Home = () => {
                 {/* Home Bio */}
                 <div className='row mt-5'>
                     <div className='col-12 col-md-6'>
-                        <div className='bio card  mb-5 p-3'>
+                        <div
+                            data-aos='fade-up'
+                            data-aos-duration='1000'
+                            className='bio card  mb-5 p-3'
+                        >
                             <p className='lead card-body'>
                                 I'm MERN Stack Developer currently pursuing
                                 Bachelor's Degree in Computer Engineering from
@@ -102,6 +112,8 @@ const Home = () => {
                     </div>
                     <div className='col-12 col-md-6'>
                         <img
+                            data-aos='fade-up'
+                            data-aos-duration='1000'
                             className='mr-6'
                             width='130%'
                             height='100%'

@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ScrollTop from './utils/ScrollTop';
 
 const AboutMe = () => {
@@ -38,14 +39,33 @@ const AboutMe = () => {
             autoplay: true,
             animationData: require('../assets/img/Android.json'),
         });
+        AOS.init();
     }, []);
     return (
         <Fragment>
             <ScrollTop />
             <div className='container'>
-                <div className='heading h1 text-center'>What I Do?</div>
-                <div className='mt-5 domain text-center'>Web Development</div>
-                <div className='row'>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    className='heading h1 text-center'
+                >
+                    What I Do?
+                </div>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    data-aos-delay='300'
+                    className='mt-5 domain text-center'
+                >
+                    Web Development
+                </div>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    data-aos-delay='300'
+                    className='row'
+                >
                     <div className='col-12 col-md-6'>
                         <div className='h2 category mt-5'>
                             Frontend Technologies
@@ -104,11 +124,19 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-12 col-md-6'>
+                    <div
+                        data-aos='fade-right'
+                        data-aos-duration='1000'
+                        className='col-12 col-md-6'
+                    >
                         <div className='backendGIF' ref={backendGIF}></div>
                     </div>
                     <div className='col-12 col-md-6'>
-                        <div className='h2 category mt-5'>
+                        <div
+                            data-aos='fade-left'
+                            data-aos-duration='1000'
+                            className='h2 category mt-5'
+                        >
                             Backend Technologies
                             <div className='icons mt-4'>
                                 <div
@@ -154,12 +182,20 @@ const AboutMe = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-5 domain text-center'>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    className='mt-5 domain text-center'
+                >
                     Android Development
                 </div>
                 <div className='row'>
                     <div className='col-12 col-md-6'>
-                        <div className='description'>
+                        <div
+                            data-aos='fade-right'
+                            data-aos-duration='1000'
+                            className='description'
+                        >
                             <div className='h2 category mt-5'>Technologies</div>
                             <div className='icons mt-4'>
                                 <div
@@ -188,20 +224,36 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6'>
+                    <div
+                        data-aos='fade-left'
+                        data-aos-duration='1000'
+                        className='col-12 col-md-6'
+                    >
                         <div className='androidGIF' ref={androidGIF}></div>
                     </div>
                 </div>
-                <div className='mt-5 domain text-center'>Programming</div>
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    className='mt-5 domain text-center'
+                >
+                    Programming
+                </div>
                 <div className='row'>
                     <div className='col-12 col-md-6'>
                         <div
+                            data-aos='fade-right'
+                            data-aos-duration='1000'
                             className='programmingGIF'
                             ref={programmingGIF}
                         ></div>
                     </div>
                     <div className='col-12 col-md-6'>
-                        <div className='description'>
+                        <div
+                            data-aos='fade-left'
+                            data-aos-duration='1000'
+                            className='description'
+                        >
                             <div className='h2 category mt-5'>
                                 Programming Languages
                             </div>

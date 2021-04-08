@@ -5,11 +5,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Education = () => {
-    const projectGIF = useRef(null);
+    const educationGIF = useRef(null);
 
     useEffect(() => {
         lottie.loadAnimation({
-            container: projectGIF.current,
+            container: educationGIF.current,
             renderer: 'svg',
             loop: true,
             autoplay: true,
@@ -26,10 +26,10 @@ const Education = () => {
                     data-aos-duration='1000'
                     className='ed-header row'
                 >
-                    <div className='col-12 col-md-6'>
-                        <div className='projectGIF' ref={projectGIF}></div>
+                    <div className='col-12 col-md-6 order-12'>
+                        <div className='educationGIF' ref={educationGIF}></div>
                     </div>
-                    <div className='col-12 col-md-6 ed-align'>
+                    <div className='col-12 col-md-6 ed-align order-1'>
                         <div className='pr-heading h1 text-center'>
                             Education
                         </div>

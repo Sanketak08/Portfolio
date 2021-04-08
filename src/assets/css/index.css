@@ -111,6 +111,22 @@ body {
     width: 100%;
 }
 
+/* NAVBAR MEDIA QUERIES */
+@media (max-width: 768px) {
+    .name-logo {
+        font-size: 40px;
+    }
+    .name-braces {
+        font-size: 20px;
+    }
+    .nav-item {
+        margin-bottom: 30px;
+    }
+    .mr-4 {
+        margin-right: 0 !important;
+    }
+}
+
 /* HOME */
 .home {
     height: 100vh;
@@ -162,6 +178,44 @@ body {
 
 .fa-file {
     color: var(--white) !important;
+}
+
+/* HOME MEDIA QUERIES */
+@media (max-width: 768px) {
+    .greeting-text__hi {
+        font-size: 20px;
+        text-align: center;
+    }
+    .greeting-text__name {
+        font-size: 40px;
+        text-align: center;
+    }
+    .greeting-text__bio {
+        font-size: 20px;
+        text-align: center;
+    }
+    .ml-4 {
+        margin-left: 0 !important;
+    }
+    .margin_b-res {
+        margin-bottom: 5vw !important;
+    }
+    .custom-btn {
+        margin-bottom: 7vw;
+    }
+    .margin-res {
+        margin-top: 7vw !important;
+    }
+    .bio {
+        margin-top: 10vw;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .img-res {
+        margin-top: 18vw;
+        width: 100% !important;
+        height: 80%;
+    }
 }
 
 /* RESUME Button */
@@ -308,6 +362,10 @@ body {
     font-size: 50px;
 }
 
+.order-12 {
+    order: 1;
+}
+
 .domain {
     letter-spacing: 1px;
     font-weight: 900;
@@ -341,10 +399,43 @@ ul {
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 .mongo {
     color: var(--mongo-color) !important;
+}
+
+/* ABOUT MEDIA QUERIES */
+@media (max-width: 768px) {
+    .heading {
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .domain {
+        letter-spacing: 0px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .category {
+        letter-spacing: 0px;
+        font-weight: 500;
+    }
+    .order-12 {
+        order: 12;
+    }
+    .key-points {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        text-align: justify;
+    }
+    .iconify {
+        width: 50px;
+        height: auto;
+        margin-right: 2vw;
+    }
 }
 
 /* EDUCATION PAGE */
@@ -402,6 +493,43 @@ ul {
     color: var(--white);
     background-color: var(--font-color);
     border-radius: 10px;
+}
+
+/* EDUCATION PAGE MEDIA QUERIES */
+@media (max-width: 768px) {
+    .ed-align {
+        top: 0;
+        left: 0;
+    }
+    .educationGIF {
+        margin-top: 10vw;
+        height: 90%;
+    }
+    .pr-heading {
+        letter-spacing: 0px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .college {
+        font-size: 21px;
+    }
+    .marks {
+        font-size: 20px;
+    }
+    .num-font-year {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .num-font-marks {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .qualification {
+        top: 40%;
+        font-size: 20px;
+        padding: 7px 15px;
+    }
 }
 
 /* PROJECT PAGE */

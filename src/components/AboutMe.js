@@ -66,8 +66,8 @@ const AboutMe = () => {
                     data-aos-delay='300'
                     className='row'
                 >
-                    <div className='col-12 col-md-6'>
-                        <div className='h2 category mt-5'>
+                    <div className='col-12 col-md-6 order-12'>
+                        <div className='h2 category mt-5 '>
                             Frontend Technologies
                         </div>
                         <div className='description'>
@@ -119,17 +119,18 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-6 order-1'>
                         <div className='frontendGIF' ref={frontendGIF}></div>
                     </div>
                 </div>
                 <div className='row'>
-                    <div
-                        data-aos='fade-right'
-                        data-aos-duration='1000'
-                        className='col-12 col-md-6'
-                    >
-                        <div className='backendGIF' ref={backendGIF}></div>
+                    <div className='col-12 col-md-6'>
+                        <div
+                            data-aos='fade-right'
+                            data-aos-duration='1000'
+                            className='backendGIF'
+                            ref={backendGIF}
+                        ></div>
                     </div>
                     <div className='col-12 col-md-6'>
                         <div
@@ -190,7 +191,7 @@ const AboutMe = () => {
                     Android Development
                 </div>
                 <div className='row'>
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-6 order-12'>
                         <div
                             data-aos='fade-right'
                             data-aos-duration='1000'
@@ -224,12 +225,13 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
-                    <div
-                        data-aos='fade-left'
-                        data-aos-duration='1000'
-                        className='col-12 col-md-6'
-                    >
-                        <div className='androidGIF' ref={androidGIF}></div>
+                    <div className='col-12 col-md-6 order-1'>
+                        <div
+                            data-aos='fade-left'
+                            data-aos-duration='1000'
+                            className='androidGIF'
+                            ref={androidGIF}
+                        ></div>
                     </div>
                 </div>
                 <div

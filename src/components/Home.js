@@ -33,7 +33,7 @@ const Home = () => {
                     >
                         {/* Greetings Text */}
                         <div className='greeting-para col-12 col-md-6'>
-                            <div className='greeting-text mt-6 mb-5'>
+                            <div className='greeting-text margin_b-res mt-6 mb-5'>
                                 <div className='h3 greeting-text__hi'>
                                     Hi There!
                                 </div>
@@ -66,7 +66,7 @@ const Home = () => {
                                 </a>
                             </div>
                             {/* Resume Button */}
-                            <div className='d-flex justify-content-center mt-5'>
+                            <div className='d-flex justify-content-center margin-res mt-5'>
                                 <a
                                     href='https://drive.google.com/file/d/1g-YNHMKSPFB1t4RjLWeHnHMuqHqAXUhs/view?usp=sharing'
                                     target='_blank'
@@ -114,7 +114,7 @@ const Home = () => {
                         <img
                             data-aos='fade-up'
                             data-aos-duration='1000'
-                            className='mr-6'
+                            className='img-res'
                             width='130%'
                             height='100%'
                             src={HomeBio}

@@ -1,7 +1,5 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 import ScrollTop from './utils/ScrollTop';
 
 const AboutMe = () => {
@@ -11,6 +9,7 @@ const AboutMe = () => {
     const androidGIF = useRef(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         lottie.loadAnimation({
             container: frontendGIF.current,
             renderer: 'svg',
@@ -39,7 +38,6 @@ const AboutMe = () => {
             autoplay: true,
             animationData: require('../assets/img/Android.json'),
         });
-        // AOS.init();
     }, []);
     return (
         <Fragment>

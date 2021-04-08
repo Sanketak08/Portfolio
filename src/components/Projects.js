@@ -1,7 +1,5 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import DevConnector from '../assets/img/DevConnector.png';
 import ReactNativeLibrary from '../assets/img/ReactNativeLibrary.png';
 import Ideathon from '../assets/img/Ideathon.png';
@@ -19,7 +17,6 @@ const Projects = () => {
             autoplay: true,
             animationData: require('../assets/img/Project.json'),
         });
-        AOS.init();
     }, []);
 
     return (
@@ -31,14 +28,14 @@ const Projects = () => {
                     data-aos-duration='1000'
                     className='row pr-header'
                 >
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-6 order-12'>
                         <div className='projectGIF' ref={projectGIF}></div>
                     </div>
-                    <div className='align col-12 col-md-6'>
+                    <div className='align col-12 col-md-6 order-1'>
                         <div className='pr-heading h1 text-center'>
                             Projects
                         </div>
-                        <div className='lead mt-4 text-center'>
+                        <div className='justify-text-res lead mt-4 text-center'>
                             My projects make best use of new technologies and
                             are based on real-world scenarios. I've made use of
                             different technologies for different projects.
@@ -65,7 +62,7 @@ const Projects = () => {
                             <p className='h1 title'>DevConnector</p>
                         </div>
                         <div>
-                            <p className='lead'>
+                            <p className='justify-text-res lead'>
                                 This is the Web-App for the Developers. One can
                                 build his profile and add posts, comments and
                                 hit like.
@@ -104,13 +101,13 @@ const Projects = () => {
                     <div
                         data-aos='fade-right'
                         data-aos-duration='1000'
-                        className='col-12 col-md-6'
+                        className='col-12 col-md-6 order-12'
                     >
                         <div>
                             <p className='h1 title'>Istriwala</p>
                         </div>
                         <div>
-                            <p className='lead'>
+                            <p className='justify-text-res lead'>
                                 This is mobile application made for laundry
                                 owners. The app features basic necessities like
                                 creating an order, filtering the orders over a
@@ -144,7 +141,7 @@ const Projects = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6 d-flex align-items-center justify-content-center'>
+                    <div className='col-12 col-md-6 order-1 d-flex align-items-center justify-content-center'>
                         <img
                             data-aos='flip-right'
                             data-aos-duration='1000'
@@ -174,7 +171,7 @@ const Projects = () => {
                             <p className='h1 title'>React Native Library</p>
                         </div>
                         <div>
-                            <p className='lead'>
+                            <p className='justify-text-res lead'>
                                 This is an Open-Source Project to make the open
                                 source library for React Native, in which I've
                                 implemented various ready to use components for
@@ -209,13 +206,13 @@ const Projects = () => {
                     <div
                         data-aos='fade-right'
                         data-aos-duration='1000'
-                        className='col-12 col-md-6'
+                        className='col-12 col-md-6 order-12'
                     >
                         <div>
                             <p className='h1 title'>Ideathon</p>
                         </div>
                         <div>
-                            <p className='lead'>
+                            <p className='justify-text-res lead'>
                                 Created website for IDEATHON'20 - the Hackathon
                                 conducted by PISB
                             </p>
@@ -246,7 +243,7 @@ const Projects = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-6 order-1 justify-image'>
                         <img
                             data-aos='flip-right'
                             data-aos-duration='1000'
@@ -268,7 +265,7 @@ const Projects = () => {
                     target='_blank'
                     rel='noreferrer'
                 >
-                    <button type='button' class='custom-btn'>
+                    <button type='button' class='mt-res-2 custom-btn'>
                         More Projects
                     </button>
                 </a>

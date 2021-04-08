@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import ScrollTop from './utils/ScrollTop';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const ContactMe = () => {
     const contactGIF = useRef(null);
@@ -15,7 +13,6 @@ const ContactMe = () => {
             autoplay: true,
             animationData: require('../assets/img/Contact.json'),
         });
-        AOS.init();
     }, []);
     return (
         <Fragment>
@@ -27,15 +24,15 @@ const ContactMe = () => {
                     className='row ed-header'
                 >
                     {/* Contact GIF */}
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-6 order-12'>
                         <div className='contactGIF' ref={contactGIF}></div>
                     </div>
                     {/* Contact Heading */}
-                    <div className='col-12 col-md-6 ed-align'>
+                    <div className='col-12 col-md-6 ed-align order-1'>
                         <div className='pr-heading h1 text-center'>
                             Contact Me
                         </div>
-                        <div className='lead mt-4 text-center'>
+                        <div className='justify-text-res lead mt-4 text-center'>
                             Feel free to contact me. I'm available on every
                             social media, I can help you with Web Development
                             and App Development.
@@ -47,7 +44,7 @@ const ContactMe = () => {
                     <div
                         data-aos='fade-up'
                         data-aos-duration='1000'
-                        className='h1 text-center'
+                        className='font-med h1 text-center'
                     >
                         Get In Touch!
                     </div>
@@ -58,7 +55,7 @@ const ContactMe = () => {
                             data-aos-duration='1000'
                             className='email-heading d-flex justify-content-center align-items-center'
                         >
-                            <span className='h2 ml-3'>
+                            <span className='font-small h2 ml-3'>
                                 <strong>Email</strong>
                             </span>
                         </div>
@@ -78,7 +75,7 @@ const ContactMe = () => {
                         <div
                             data-aos='fade-right'
                             data-aos-duration='1000'
-                            className='h2 text-center'
+                            className='font-small h2 text-center'
                         >
                             <strong>Social Media</strong>
                         </div>
@@ -119,7 +116,7 @@ const ContactMe = () => {
                         <div
                             data-aos='fade-right'
                             data-aos-duration='1000'
-                            className='h2 text-center'
+                            className='font-small h2 text-center'
                         >
                             <strong>Address</strong>
                         </div>

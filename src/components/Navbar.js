@@ -30,6 +30,11 @@ const Navbar = () => {
                 <ul className='navbar-nav ml-auto'>
                     <li className='nav-item mr-4'>
                         <NavLink
+                            data-toggle='collapse'
+                            data-target='#navbarSupportedContent'
+                            aria-controls='navbarSupportedContent'
+                            aria-expanded='false'
+                            aria-label='Toggle navigation'
                             exact
                             to='/'
                             activeClassName='active'
@@ -40,6 +45,11 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item mr-4'>
                         <NavLink
+                            data-toggle='collapse'
+                            data-target='#navbarSupportedContent'
+                            aria-controls='navbarSupportedContent'
+                            aria-expanded='false'
+                            aria-label='Toggle navigation'
                             to='/about'
                             activeClassName='active'
                             className='nav-link nav-text'
@@ -49,6 +59,11 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item mr-4'>
                         <NavLink
+                            data-toggle='collapse'
+                            data-target='#navbarSupportedContent'
+                            aria-controls='navbarSupportedContent'
+                            aria-expanded='false'
+                            aria-label='Toggle navigation'
                             to='/education'
                             activeClassName='active'
                             className='nav-link nav-text'
@@ -58,6 +73,11 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item mr-4'>
                         <NavLink
+                            data-toggle='collapse'
+                            data-target='#navbarSupportedContent'
+                            aria-controls='navbarSupportedContent'
+                            aria-expanded='false'
+                            aria-label='Toggle navigation'
                             to='/projects'
                             activeClassName='active'
                             className='nav-link nav-text'
@@ -67,6 +87,11 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item mr-4'>
                         <NavLink
+                            data-toggle='collapse'
+                            data-target='#navbarSupportedContent'
+                            aria-controls='navbarSupportedContent'
+                            aria-expanded='false'
+                            aria-label='Toggle navigation'
                             to='/contact'
                             activeClassName='active'
                             className='nav-link nav-text'

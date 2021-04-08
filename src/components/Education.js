@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import ScrollTop from './utils/ScrollTop';
 import lottie from 'lottie-web';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Education = () => {
     const educationGIF = useRef(null);
@@ -15,7 +13,6 @@ const Education = () => {
             autoplay: true,
             animationData: require('../assets/img/Education.json'),
         });
-        AOS.init();
     }, []);
     return (
         <Fragment>

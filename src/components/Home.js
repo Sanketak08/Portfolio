@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import lottie from 'lottie-web';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import HomeBio from '../assets/img/Home-bio.png';
 import ScrollTop from './utils/ScrollTop';
 
@@ -17,7 +15,6 @@ const Home = () => {
             autoplay: true,
             animationData: require('../assets/img/HomePage.json'),
         });
-        AOS.init();
     }, []);
 
     return (

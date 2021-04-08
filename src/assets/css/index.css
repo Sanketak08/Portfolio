@@ -51,9 +51,14 @@ m-0 {
     /* border: 1px solid red; */
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg-main);
     color: var(--font-color) !important;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -585,11 +590,44 @@ a:hover {
     background-color: var(--font-color);
 }
 
-/* CONTACT ME */
-/* .ad-heading {
-    font-weight: bold;
-} */
+/* PROJECT MEDIA QUERIES */
+@media (max-width: 768px) {
+    .align {
+        top: 0;
+        left: 0;
+    }
+    .projectGIF {
+        margin-top: 70vw;
+    }
+    .justify-text-res {
+        text-align: justify !important;
+    }
+    .pr-image {
+        height: 40vw;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .pr-image:not(first-child) {
+        margin-top: 15vw;
+    }
+    .pr-image-istri {
+        height: 50vw;
+        margin-top: 15vw;
+        border-radius: 7px;
+    }
+    .title {
+        margin-top: 7vw;
+    }
+    .pr-btn {
+        padding: 3px 20px;
+        font-size: 20px;
+    }
+    .mt-res-2 {
+        margin-top: 10vw;
+    }
+}
 
+/* CONTACT ME */
 .email-icon {
     padding: 18px;
     background-color: var(--font-color);
@@ -650,4 +688,28 @@ a:hover {
     color: var(--white);
     font-size: var(--font-size);
     border-radius: 100% !important;
+}
+
+/* CONTACT ME MEDIA QUERIES */
+@media (max-width: 768px) {
+    .contactGIF {
+        margin-top: 50vw;
+    }
+    .font-med {
+        font-size: 30px;
+    }
+    .font-small {
+        font-size: 22px;
+    }
+    .email-icon,
+    .git-icon,
+    .linkedin-icon,
+    .instagram-icon {
+        padding: 15px;
+        font-size: 20px;
+    }
+    .map-icon {
+        padding: 14px 18px;
+        font-size: 20px;
+    }
 }

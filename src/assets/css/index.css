@@ -64,6 +64,7 @@ body {
     background-color: var(--bg-main);
     color: var(--font-color) !important;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* NAVBAR */

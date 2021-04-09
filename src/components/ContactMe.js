@@ -137,7 +137,7 @@ const ContactMe = () => {
             {/* Footer */}
             <div className='footer mt-5 pt-5 pb-3'>
                 <div className='lead footer-text text-center'>
-                    Made with ❤️ by Sanket Kulkarni
+                    Made by Sanket Kulkarni
                 </div>
             </div>
         </Fragment>

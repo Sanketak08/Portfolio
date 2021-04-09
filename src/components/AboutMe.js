@@ -292,11 +292,6 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-            <div className='footer pt-5 pb-3'>
-                <div className='lead footer-text text-center'>
-                    Made with ❤️ by Sanket Kulkarni
-                </div>
-            </div>
         </Fragment>
     );
 };

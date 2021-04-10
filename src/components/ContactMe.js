@@ -112,7 +112,7 @@ const ContactMe = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='address-body mt-5'>
+                    <div className='address-body mt-5 mb-6'>
                         <div
                             data-aos='fade-right'
                             data-aos-duration='1000'
@@ -135,11 +135,11 @@ const ContactMe = () => {
                 </div>
             </div>
             {/* Footer */}
-            <div className='footer mt-5 pt-5 pb-3'>
+            {/* <div className='footer mt-5 pt-5 pb-3'>
                 <div className='lead footer-text text-center'>
                     Made by Sanket Kulkarni
                 </div>
-            </div>
+            </div> */}
         </Fragment>
     );
 };

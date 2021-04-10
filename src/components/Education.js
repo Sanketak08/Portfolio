@@ -118,7 +118,7 @@ const Education = () => {
                     <div
                         data-aos='fade-up'
                         data-aos-duration='1000'
-                        className='card edu-card mt-5'
+                        className='card edu-card mt-5 mb-5'
                     >
                         <div className='card-body'>
                             <div className='edu-info'>

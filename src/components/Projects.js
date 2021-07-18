@@ -253,22 +253,22 @@ const Projects = () => {
                         />
                     </div>
                 </div>
-            </div>
-            {/* More Projects */}
-            <div
-                data-aos='fade-up'
-                data-aos-duration='1000'
-                className='d-flex justify-content-center mt-6'
-            >
-                <a
-                    href='https://github.com/Sanketak08'
-                    target='_blank'
-                    rel='noreferrer'
+                {/* More Projects */}
+                <div
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                    className='d-flex justify-content-center mt-6'
                 >
-                    <button type='button' class='mt-res-2 custom-btn'>
-                        More Projects
-                    </button>
-                </a>
+                    <a
+                        href='https://github.com/Sanketak08'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <button type='button' class='mt-res-2 custom-btn'>
+                            More Projects
+                        </button>
+                    </a>
+                </div>
             </div>
         </Fragment>
     );

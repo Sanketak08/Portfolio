@@ -65,7 +65,7 @@ const Home = () => {
                             {/* Resume Button */}
                             <div className='d-flex justify-content-center margin-res mt-5'>
                                 <a
-                                    href='https://drive.google.com/file/d/1WMAwZ80uk2SEpJSC4plVnF6ZQpalXBeE/view?usp=sharing'
+                                    href='https://drive.google.com/file/d/1nSzJ3lVsH4JH5XNiNNtMTbhN0l7Y_8-W/view?usp=sharing'
                                     target='_blank'
                                     rel='noreferrer'
                                 >

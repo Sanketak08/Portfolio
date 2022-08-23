@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import lottie from "lottie-web";
 import HomeBio from "../assets/img/Home-bio.png";
 import ScrollTop from "./utils/ScrollTop";
+import ResumeIcon from "../assets/img/note.png";
 
 const Home = () => {
   const homeGIF = useRef(null);
@@ -59,11 +60,12 @@ const Home = () => {
               {/* Resume Button */}
               <div className="d-flex justify-content-center margin-res mt-5">
                 <a
-                  href="https://drive.google.com/file/d/1nSzJ3lVsH4JH5XNiNNtMTbhN0l7Y_8-W/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1_zIWnEXKDDz5w1N0wf6r9UXs4_v1oBWy/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer">
                   <button type="button" class="custom-btn">
-                    <i className="fa fa-file" /> See My Resume
+                    <img src={ResumeIcon} height={20} width={20} alt="Resume" />{" "}
+                    See My Resume
                   </button>
                 </a>
               </div>

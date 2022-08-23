@@ -73,7 +73,7 @@ const Projects = () => {
             </div>
             <div className="mt-8">
               <a
-                href="https://devconnector08.herokuapp.com/"
+                href="https://devconnectornew08.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer">
                 <button type="button" className="pr-btn">

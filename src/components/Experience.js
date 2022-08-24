@@ -109,7 +109,7 @@ const Experience = () => {
                         I've worked on the ecosystems which consists of the web
                         as well as android applications. I've worked on
                         integrating & creating APIs, handled databases. I've
-                        worked with technoliogies like{" "}
+                        worked with technologies like{" "}
                         <span style={{ fontStyle: "italic" }}>
                           ReactJS, React Native, Firebase
                         </span>

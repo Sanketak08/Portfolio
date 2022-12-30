@@ -186,7 +186,7 @@ const Experience = () => {
                     <div className="edu-info">
                       <div className="top-info d-flex flex-row justify-content-between">
                         <h3 className="mb-0 college">Technical Head</h3>
-                        <div className="tenure">Sep 2021 - Present</div>
+                        <div className="tenure">Sep 2021 - Aug 2022</div>
                       </div>
                       <div className="top-info d-flex flex-row justify-content-between">
                         <div className="comp-name">

@@ -53,7 +53,7 @@ const Education = () => {
                   </h3>
                   <div className="num-font-year">2019 - 2023</div>
                   <div className="mt-2 marks">
-                    CGPA : <span className="num-font-marks">9.57</span>
+                    CGPA : <span className="num-font-marks">9.22</span>
                   </div>
                 </div>
                 <div className="qualification">BE</div>
